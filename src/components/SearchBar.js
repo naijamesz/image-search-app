@@ -18,7 +18,7 @@ export default function SearchBar({ onSubmit }) {
   return (
     <div className='search-bar'>
       <form className='form-input' onSubmit={handleFormSubmit}>
-        <label>Enter Search</label>
+        <label>Search any images</label>
         <input type={term} onChange={handleChange} />
       </form>
     </div>
