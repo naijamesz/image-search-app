@@ -4,7 +4,7 @@ import App from './App';
 
 import searchImages from './api';
 
-// เรียกใช้แบบฟังก์ชั่น callback
+// Callback function to execute when mutations are observed
 searchImages();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
