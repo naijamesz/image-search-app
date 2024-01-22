@@ -5,7 +5,7 @@ import { useState } from 'react';
 export default function SearchBar({ onSubmit }) {
   const [term, setTerm] = useState('');
 
-  /* handleFormSubmit (after press Enter key to start event) communicate from Child up to Parent(App.js) component with onSubmit props   */
+  /* handleFormSubmit (after press Enter key to start event) communicate from Child up to Parent(App.js) component and user submit to call onSubmit with the current 'term'   */
   const handleFormSubmit = event => {
     /*event.preventDefault(); for disable reload page after user types in input  */
     event.preventDefault();
