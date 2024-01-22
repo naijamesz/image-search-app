@@ -16,8 +16,6 @@ export default function SearchBar({ onSubmit }) {
     setTerm(event.target.value);
   };
 
-  /* User types in input > Browser updates the text in the input > Browser triggers an event to the input was updated > React detects  value from the input and update state > State update and Component rerenders > provide 'value' prop and using term to input > loop back to User types in input */
-
   return (
     <div className='search-bar'>
       <form className='form-input' onSubmit={handleFormSubmit}>
