@@ -8,7 +8,7 @@
 body {
   display: grid;
   padding: 1.5rem;
-  margin: 1rem;
+  margin: 0.5rem;
   grid-template-columns: 100%;
   max-width: 100%;
   background-color: rgb(185, 218, 184);
@@ -28,7 +28,7 @@ label {
   text-transform: capitalize;
 }
 .search-bar {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 form {
@@ -42,22 +42,19 @@ form {
 
 input {
   background-color: rgba(255, 255, 255, 0.555);
-  padding-left: 1rem;
-  align-items: center;
-  justify-content: center;
-  padding-right: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   height: 3rem;
   font-size: 1.75rem;
   border-radius: 0.5rem;
   width: 100%;
-  min-width: 24rem;
+  min-width: 24.25rem;
   box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.2);
 }
 
 .image-list {
-  padding: 1rem 0cap;
   margin-top: 1rem;
-  columns: 5 325px;
+  columns: 5 350px;
   width: 100%;
 }
 
