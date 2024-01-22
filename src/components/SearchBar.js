@@ -3,15 +3,18 @@
 import { useState } from 'react';
 
 export default function SearchBar({ onSubmit }) {
+  // Initialize state 'term' with an empty string
   const [term, setTerm] = useState('');
 
-  /* handleFormSubmit (after press Enter key to start event) communicate from Child up to Parent(App.js) component and user submit to call onSubmit with the current 'term'   */
+  // This function is triggered when the form is submitted (Enter key is pressed)
+  // It prevents the default form submission behavior (page reload) and calls the 'onSubmit' function passed as a prop from the parent component (App.js) with the current state 'term'
   const handleFormSubmit = event => {
-    /*event.preventDefault(); for disable reload page after user types in input  */
     event.preventDefault();
     onSubmit(term);
   };
-  /* Handling text inputs */
+
+  // This function is triggered when the input field value changes
+  // It updates the state 'term' with the new input field value
   const handleChange = event => {
     setTerm(event.target.value);
   };
@@ -20,8 +23,8 @@ export default function SearchBar({ onSubmit }) {
     <div className='search-bar'>
       <form className='form-input' onSubmit={handleFormSubmit}>
         <label>Search any images</label>
-        {/* <input value={term} onChange={handleChange} /> */}
-        <input type={term} value={term} onChange={handleChange} />
+        {/* The input field value is bound to the state 'term' and it's updated every time the input field value changes */}
+        <input type='text' value={term} onChange={handleChange} />
       </form>
     </div>
   );
